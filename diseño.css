@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2? familia = Antón &family= Merriweather+Sans & family= Permanent+Marker &familia= Secular+Uno & display=swap');
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav-reg a{
+    color: rgb(0, 0, 0);
+}
+.nav-logo{
+    color: white;
+    margin-left: 100px;
+    font-size: 3rem;
+    font-weight: bold ;
+}
+.nav-link{
+    padding-right: 5px;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 1rem;
+    font-size: 150%;
+}
+header{
+    display: flex;
+    background-color: #101828;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'Permanent Marker', cursive;
+}
+nav a{
+    padding-right: 5px;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 2rem;
+}
+
+@media (max-withd: 688px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    html {
+        font-size: 80%;
+    }
+}
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #000000;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+button:hover {
+    background-color: #5343df;
+    color: #030303;
+    transform: translateY(-7px);
+}
+button:active {
+    transform: translateY(-1px);
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+#Inicio{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#Inicio::after {
+    content: ""; 
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0,567);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+}
+
+#Inicio .contain h1{
+    font-size: 4rem;
+    font-family:  Arial, Helvetica, sans-serif, sans-serif;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+
+#Inicio .contain p {
+    font-size: 1.3rem;
+    width: 52%;
+    font-family:  Arial, Helvetica, sans-serif, sans-serif;
+}
+
+#Inicio .container-1{
+    align-items: center;
+}
+
+.container-2{
+    background-color: #ffffff;
+}
+
+.footer{
+    background-color: #101828;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #000000;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 120px;
+}
+p{
+    font-size: 1.8rem;
+    font-family:  Arial, Helvetica, sans-serif, sans-serif;
+    text-align: center;
+}
+.container-1{
+    margin-left: 85px;
+    width: 50%;
+}
+
+.container-1 h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.container-1 p{
+    font-size: 1.8rem;
+}
+
+h2{
+    color: #475467;
+}
+.grid{
+    display: grid;
+    max-width: 1100px;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(3,280px);
+}
+
+.items{
+    background-color: #ffffff;
+    border: solid thin #e1e1e1;
+}
+
+.items img{
+    width: 100%;
+    height: 170px;
+}
+
+.info{
+    padding: 15px;
+    font-family:  Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.info h3{
+    font-size: 1.6rem;
+    
+}
+
+.info p{
+    font-size: 1.8rem;
+}
+
+.precio p:first-child{
+    text-decoration: line-through;
+}
+
+.info button {
+    padding: 1rem;
+    width: 100%;
+    background-color: #5343df;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.precio{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.precio p{
+    font-size: 1.8rem;
+}
+#video{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 5%;
+    transform: translate(-50%,);
+}
